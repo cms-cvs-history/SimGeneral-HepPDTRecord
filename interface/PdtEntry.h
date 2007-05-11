@@ -7,9 +7,10 @@
  */
 #include <string>
 #include <iterator>
+#include "CLHEP/HepPDT/ParticleData.hh"
 
 namespace edm { class EventSetup; }
-namespace HepPDT { class ParticleData; }
+
 
 class PdtEntry {
 public:

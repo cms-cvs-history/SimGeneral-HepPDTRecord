@@ -31,7 +31,7 @@ const HepPDT::ParticleData & PdtEntry::data() const {
 } 
 
 void PdtEntry::setup( const edm::EventSetup & es ) {
-  ESHandle<HepPDT::ParticleDataTable> pdt;
+  ESHandle<DefaultConfig::ParticleDataTable> pdt;
   es.getData( pdt );
   const HepPDT::ParticleData * p = 0;
   if ( pdgId_ == 0 ) {
